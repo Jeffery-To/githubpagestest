@@ -1,0 +1,291 @@
+body,ul,img,button,input{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.container{
+	width:1400px;
+	margin:0 auto;
+}
+
+@media screen and (max-width:1400px){
+	.container{
+		width:100%;
+	}
+}
+
+body {
+	font: 14px/20px "微软雅黑";
+	color: #fff;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+header {
+	height:110px;
+	line-height: 110px;
+	background-color: #000;
+	font-weight: bold;
+	position: relative;
+}
+header img{
+	margin-left:80px;
+	vertical-align: middle;
+}
+header nav{
+	display: inline-block;
+	vertical-align: middle;
+}
+header ul li a{
+	margin-left: 30px; 
+}
+header .seach{
+	position: absolute;
+	right:160px;
+	display: inline-block;
+	vertical-align: middle;
+}
+header .shopping{
+	position: absolute;
+	right:90px;
+}
+header .shopping img{
+	margin: -7px 10px 0 0;
+}
+
+.slider1,.slider2{
+	height:658px;
+	position: relative;
+}
+.slider1{
+	background-image: url(./pic/slider1.png);
+	display: block;
+}
+.slider2{
+	background-image: url(./pic/slider2.png);
+	display: none;
+}
+.slider1 a,.slider2 a{
+	position: absolute;
+	width: 150px;
+	line-height:50px; 
+	vertical-align: middle;
+	text-align: center;
+	background-color: #000;
+	color:#fff;
+	font-weight: bold; 
+}
+.slider1 a{
+	left:730px;
+	bottom: 110px;
+}
+.slider2 a{
+	left:760px;
+	bottom: 180px;
+}
+
+.snowboards {
+	padding: 120px 0;
+	color: #000;
+	text-align: center;
+	line-height: 40px;
+	overflow: hidden;
+}
+.snowboards .top strong{
+	font-weight: bold;
+	font-size: 35px;
+}
+.snowboards .top em{
+	font-style: normal;
+	font-size: 10px;
+}
+.snowboards .top span{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 15px;
+	background-image: url(./pic/x.png);
+}
+.snowboards .middle{
+	position: relative;
+}
+.snowboards .middle ul{
+	margin:60px -198px;
+}
+.snowboards .middle ul li a{
+	display: inline-block;
+	width: 170px;
+	height: 405px;
+	margin:0 90px; 
+	background-image: url(./pic/board.png);
+}
+.snowboards .middle ul .board1 a{
+	background-position: 0 0;
+}
+.snowboards .middle ul .board2 a{
+	background-position: -170px 0;
+}
+.snowboards .middle ul .board3 a{
+	background-position: -340px 0;
+}
+.snowboards .middle ul .board4 a{
+	background-position: -510px 0;
+}
+.snowboards .middle ul .board5 a{
+	background-position: -680px 0;
+}
+.snowboards .middle .prev{
+	width: 122px;
+	height: 227px;
+	position: absolute;
+	left: 0;
+	top:89px;
+	background-image: url(./pic/prev.png);
+}
+.snowboards .middle .next{
+	width: 122px;
+	height: 227px;
+	position: absolute;
+	right: 0;
+	top:89px;
+	background-image: url(./pic/next.png);
+}
+.snowboards .bottom span{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.company {
+	width:100%;
+	height: 1015px;
+	background-image: url(./pic/company.png);
+	position: relative;
+}
+.company strong {
+	position: absolute;
+	left: 200px;
+	top: 250px;
+	font-size: 45px;
+	line-height: 50px;
+}
+.company em {
+	position: absolute;
+	left: 200px;
+	top: 450px;
+	width: 600px;
+	font-style: normal;
+}
+.company em + em {
+	margin-top: 160px
+}
+
+.features {
+	width:100%;
+	height:500px;
+	color:#000;
+	margin:100px 0;
+}
+.features h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+.features > span {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: 15px auto;
+	background-image: url(./pic/x.png);
+} 
+.features ul {
+	width: 1020px;
+	margin:0 auto;
+}
+.features ul li {
+	width:230px; 
+	height:150px;
+	margin:90px 10px;
+}
+.features ul > li:nth-of-type(1) {
+	background-image: url(./pic/img-1.png);
+}
+.features ul > li:nth-of-type(2) {
+	background-image: url(./pic/img-2.png);	
+}
+.features ul > li:nth-of-type(3) {
+	background-image: url(./pic/img-3.png);
+}
+.features ul > li:nth-of-type(4) {
+	background-image: url(./pic/img-4.png);
+}
+.features ul li span {
+	display: block;
+	margin-top: 160px;
+}
+
+footer {
+	background-color: #000;
+	height: 395px;
+	position: relative;
+}
+
+footer dl{
+	display: inline-block;
+	vertical-align: top;
+	margin:75px 0 0 110px;
+}
+
+footer dl:first-of-type {
+	margin-left: 180px;
+}
+
+footer dt{
+	font-weight: bold;
+	line-height: 50px;
+}
+
+footer dd{
+	font-size: 8px;
+	margin-left: 0px;
+	line-height: 25px;
+}
+
+footer dd input {
+	width:165px;
+	height:35px; 
+}
+
+footer dd button {
+	width:60px;
+	height:35px; 
+	background-color: #c7c7c7;
+}
+
+footer dd img {
+	margin-top:60px;
+}
+
+footer span.copyright {
+    position: absolute;
+    left: 180px;
+    bottom: 60px;
+}
+
+footer span img {
+	margin-right: 10px;
+}
+
+footer span.country {
+	position: absolute;
+	right: 150px;
+	bottom: 60px;
+}
